@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | New Unity Project (1)</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=1120 height=630 style="width: 1120px; height: 630px; background: #231F20"></canvas>
+    <script src="Build/新しいフォルダー (4).loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/新しいフォルダー (4).data.unityweb",
+        frameworkUrl: "Build/新しいフォルダー (4).framework.js.unityweb",
+        codeUrl: "Build/新しいフォルダー (4).wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "New Unity Project (1)",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
